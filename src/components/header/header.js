@@ -1,21 +1,17 @@
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "./_header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header className="header"
+  <header
   >
-    <div className="header__container"
+    <div className="header"
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          className="header__link"
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <h1 className="header__title">Reliable, efficient delivery</h1>
+      <h2 className="header__subTitle">Powered by Technology</h2>
+      <p className="header__copy">Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
     </div>
   </header>
 )

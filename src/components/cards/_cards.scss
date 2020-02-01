@@ -1,0 +1,12 @@
+.cards {
+    grid-area: cards;
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-areas: 
+        'supervisor team calc'
+        'supervisor karma calc';
+    align-items: center;
+    padding-bottom: 150px;
+}

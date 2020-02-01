@@ -1,3 +1,12 @@
 @import './reset';
 @import './typography';
 @import './colors';
+//@import '../components';
+
+.layout {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        'header header header header'
+        'cards cards cards cards';
+}

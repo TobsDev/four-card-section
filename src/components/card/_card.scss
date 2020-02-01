@@ -1,0 +1,102 @@
+@import '../layout/layout.scss';
+
+.card {
+    width: 400px;
+    height: 200px;
+    padding: 40px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;  
+}
+
+.card--supervisor {
+    grid-area: supervisor;
+}
+
+.card--karma {
+    grid-area: karma;
+}
+
+.card--team {
+    grid-area: team;
+}
+
+.card--calc {
+    grid-area: calc;
+}
+
+
+
+.card::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    display: block;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card--red.card::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    display: block;
+    background: $primary-red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card--orange.card::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    display: block;
+    background: $primary-orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card--cyan.card::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    display: block;
+    background: $primary-cyan;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card--blue.card::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    padding: 0;
+    display: block;
+    background: $primary-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card__title {
+    padding-bottom: 1.125rem;
+}
+
+.card__icon {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}

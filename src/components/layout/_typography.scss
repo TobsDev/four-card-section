@@ -1,11 +1,44 @@
-// Google font
+@import './colors.scss';
+
+// Google font import
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
 
 // Font variables
 $poppins: 'Poppins', sans-serif;
+$regular-font-size: 15px;
+$light: 200;
+$regular: 400;
+$bold: 600;
+
+p {
+    font-size: $regular-font-size;
+    color: $grayish-blue;
+    font-weight: $regular;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-size: 2.125rem;
+    color: $very-dark-blue;
+    font-weight: $light;
+}
+
+h2 {
+    font-size: 2.125rem;
+    color: $very-dark-blue;
+    font-weight: $bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: $very-dark-blue;
+    font-weight: $bold;
+}
 
 
 body {
     font-family: $poppins;
     font-size: 15px;
 }
+
+
