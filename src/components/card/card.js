@@ -1,9 +1,7 @@
 import React from 'react';
 import './_card.scss';
-import { graphql, useStaticQuery } from 'gatsby';
 
 const Card = (props) => {
-    let url = props.cardURL;
 
     const team = require("../../images/four-cards/icon-team-builder.svg");
     const karma = require("../../images/four-cards/icon-karma.svg");
