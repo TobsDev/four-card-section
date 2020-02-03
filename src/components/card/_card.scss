@@ -1,50 +1,55 @@
 @import '../layout/layout.scss';
 
+$highlight-line-height: 4px;
+
 .card {
-    width: 400px;
-    height: 200px;
-    padding: 40px;
+    width: 310px;
+    height: 220px;
+    padding: 2rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     display: inline-block;  
+    box-sizing: border-box;
 }
 
-.card--supervisor {
-    grid-area: supervisor;
+@media (min-width: 600px) {
+    .card {
+        width: 350px;
+        height: 250px;
+        padding: 2rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;  
+        box-sizing: border-box;
+    }
 }
 
-.card--karma {
-    grid-area: karma;
-}
+@media (min-width: 1170px) {
+    .card--supervisor {
+        grid-area: supervisor;
+    }
 
-.card--team {
-    grid-area: team;
-}
+    .card--karma {
+        grid-area: karma;
+    }
 
-.card--calc {
-    grid-area: calc;
-}
+    .card--team {
+        grid-area: team;
+    }
 
-
-
-.card::before {
-    content: "";
-    width: 100%;
-    height: 5px;
-    padding: 0;
-    display: block;
-    background: red;
-    position: absolute;
-    top: 0;
-    left: 0;
+    .card--calc {
+        grid-area: calc;
+    }
 }
 
 .card--red.card::before {
     content: "";
     width: 100%;
-    height: 5px;
+    height: $highlight-line-height;
     padding: 0;
     display: block;
     background: $primary-red;
@@ -56,7 +61,7 @@
 .card--orange.card::before {
     content: "";
     width: 100%;
-    height: 5px;
+    height: $highlight-line-height;
     padding: 0;
     display: block;
     background: $primary-orange;
@@ -68,7 +73,7 @@
 .card--cyan.card::before {
     content: "";
     width: 100%;
-    height: 5px;
+    height: $highlight-line-height;
     padding: 0;
     display: block;
     background: $primary-cyan;
@@ -80,7 +85,7 @@
 .card--blue.card::before {
     content: "";
     width: 100%;
-    height: 5px;
+    height: $highlight-line-height;
     padding: 0;
     display: block;
     background: $primary-blue;
@@ -90,13 +95,18 @@
 }
 
 .card__title {
-    padding-bottom: 1.125rem;
+    padding-bottom: 0.675rem;
+    text-align: left;
+}
+
+.card__copy {
+    text-align: left;
 }
 
 .card__icon {
     width: 64px;
     height: 64px;
     position: absolute;
-    bottom: 40px;
-    right: 40px;
+    bottom: 25px;
+    right: 25px;
 }

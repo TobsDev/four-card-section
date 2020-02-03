@@ -8,7 +8,7 @@ const Cards = () => {
             <Card 
                 cardName="supervisor"
                 cardTitle="Supervisor" 
-                cardCopy="Lorem ipsum dolor sit amet consectetur, adipisicing elit." 
+                cardCopy="Monitors activity to identify project roadblocks" 
                 cardBorderColor="cyan"
                 cardURL="../../images/four-cards/icon-supervisor.svg"
             ></Card>
