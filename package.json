@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Four-Card-Section",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple section made with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tobias Rosenberg",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
@@ -12,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.13",
@@ -19,7 +21,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -39,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/TobsDev/four-card-section"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
